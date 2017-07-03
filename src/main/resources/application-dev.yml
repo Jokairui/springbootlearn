@@ -7,3 +7,6 @@ content: "${name} , ${age}"
 person:
   name: khirye1
   age: 19
+email:
+  from: Khirye_Jo@163.com
+  host: smtp.163.com

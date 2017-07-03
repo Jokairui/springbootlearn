@@ -3,10 +3,7 @@ package com.khirye.controller;
 import com.khirye.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by zhoukairui on 2017/6/30.
@@ -48,4 +45,10 @@ public class HelloController {
     public String getPathVar(@PathVariable String id){
         return id;
     }
+
+    @GetMapping(value = "getReqParam")
+    public String getReqParam(@RequestParam(defaultValue = "0") String id){
+        return id;
+    }
+
 }
