@@ -1,0 +1,9 @@
+server:
+  port: 8081
+  context-path: /boot
+name: khirye
+age: 18
+content: "${name} , ${age}"
+person:
+  name: khirye1
+  age: 19
